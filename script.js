@@ -40,3 +40,12 @@ wolfy[3] = "Gotham City";
 dart.push("Hawkins");
 wolfy[0] = "Gameboy";
 
+//Yell at the Ninja Turtles
+
+let ninjaTurtles = ['Donatello','Leonardo','Raphael','Michaelangelo'];
+
+for(let element of ninjaTurtles){
+    console.log(element.toLowerCase());
+}
+
+
