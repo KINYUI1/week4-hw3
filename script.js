@@ -78,3 +78,21 @@ whereIsWaldo.splice(1,1);
 whereIsWaldo[1][2] = "No one";
 console.log(whereIsWaldo[2][1][1]);
 
+//Excited Kitten
+
+const randomWords = (words) => {
+    let randomNumber = Math.floor(Math.random()*words.length);
+    return words[randomNumber];
+
+}
+
+let words = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."];
+
+for(let i = 1; i <= 20; i++){
+    if(i % 2 === 0){
+        console.log(randomWords(words));
+    }else{
+        console.log(i);
+    }
+}
+
