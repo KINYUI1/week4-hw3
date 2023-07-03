@@ -149,3 +149,17 @@ const kristynsCloset = [
   for(let i = 0 ;i < thomsCloset.length; i++){
     console.log(`Thoms outfit for today is ${thomsCloset[0][i]}, ${thomsCloset[1][i]} and ${thomsCloset[2][i]}`);
   }
+
+
+  //Dirty Laundry
+
+  for(let item of kristynsCloset){
+    console.log(`WHIRR: Now washing ${item}`);
+  }
+
+  //Inventory
+
+  console.log(thomsCloset[0]);
+  console.log(thomsCloset[1]);
+  console.log(thomsCloset[2]);
+ 
