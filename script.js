@@ -102,3 +102,50 @@ const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,
 nums.sort();
 console.log(nums[Math.floor((nums.length)/ 2)]);
 
+//Return of the Closets
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+  //Alien Attire
+
+  let kristynsShoe = kristynsCloset[0];
+  thomsCloset[2].push(kristynsShoe);
+
+  //Dress Us Up
+
+  console.log(`Kristyn's outfit for today  will be ${kristynsCloset[1]} and ${kristynsCloset[3]}!`);
+  console.log(`Kristyn's outfit for today  will be ${kristynsCloset[4]} and ${kristynsCloset[5]}!`);
+  console.log(`Kristyn's outfit for today  will be ${kristynsCloset[1]} and ${kristynsCloset[4]}!`);
+
+  for(let i = 0 ;i < thomsCloset.length; i++){
+    console.log(`Thoms outfit for today is ${thomsCloset[0][i]}, ${thomsCloset[1][i]} and ${thomsCloset[2][i]}`);
+  }
